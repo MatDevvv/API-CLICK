@@ -56,3 +56,63 @@ GET /users/
 /rooms: Lista todas as salas de um usuário específico.
 GET /rooms/
 /users: Lista todos os usuários de uma sala específica.
+
+English version:
+Description of the API for User and Room Management
+
+Technologies Used
+
+AdonisJS: MVC framework for Node.js, facilitating the development of robust APIs.
+
+JavaScript: Programming language used in the development of the API.
+
+Node.js: Execution environment for JavaScript on the server side.
+
+API Functionalities
+Creating Users and Rooms:
+
+Endpoint to create new users.
+Endpoint to create new rooms.
+Data Storage:
+
+Storing user and room information in a database (MySQL, PostgreSQL, SQLite, etc.).
+Using migrations to structure and manage the database schema.
+Querying and Listing:
+
+Endpoint to list all users.
+Endpoint to list all rooms.
+Endpoint to search for specific details of a user or room.
+Data Update:
+
+Endpoint to update user information.
+Endpoint to update room information.
+Data Deletion:
+
+Endpoint to delete a user.
+Endpoint to delete a room.
+Relationship between Users and Rooms:
+
+Endpoint Structure:
+
+Users:
+POST /users: Creates a new user.
+GET /users: Lists all users.
+GET /users/:id: Fetches details for a specific user.
+PUT /users/:id: Updates information for a specific user.
+DELETE /users/:id: Deletes a specific user.
+
+Rooms:
+POST /rooms: Creates a new room.
+GET /rooms: Lists all rooms.
+GET /rooms/:id: Fetches details for a specific room.
+PUT /rooms/:id: Updates information for a specific room.
+DELETE /rooms/:id: Deletes a specific room.
+
+Relationships:
+
+POST /rooms/
+/users/:userId: Associates a user with a room.
+GET /users/
+/rooms: Lists all rooms owned by a specific user.
+GET /rooms/
+/users: Lists all users in a specific room.
